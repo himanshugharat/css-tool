@@ -33,6 +33,7 @@
   text-align: center;
   font-size: larger;
   font-weight: bolder;
+  color: aliceblue;
 }
 .content {
   grid-area: content;
@@ -46,11 +47,12 @@
   grid-area: by;
   text-align: end;
   font-size: small;
+  color: aliceblue;
 }
 .animeButton {
   height: 50px;
   width: 300px;
-  
+  color: aliceblue;
   margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.438);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );

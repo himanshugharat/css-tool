@@ -1,0 +1,42 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  gap: 10px 10px;
+  border: 1px solid #fff;
+  grid-template-areas:
+    "input output"
+    "additional clipboard";
+}
+
+.input {
+  grid-area: input;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.output {
+  grid-area: output;
+  border: 1px solid #fff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.clipboard {
+  grid-area: clipboard;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.additional {
+  grid-area: additional;
+  border: 1px solid #fff;
+}
