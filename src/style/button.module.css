@@ -1,14 +1,14 @@
-.defaultButton{
-    background-color:  #30475e ;
-    border: 3px solid #f2a365;
-    border-radius: 6px;
-    color: #ececec;
-    height: 40px;
+.defaultButton {
+  background-color: #30475e;
+  border: 3px solid #f2a365;
+  border-radius: 6px;
+  color: #ececec;
+  height: 40px;
 }
-.defaultButton:hover{
-    background-color:  #ececec ;
-    border: 4px solid #f2a365;
-    border-radius: 6px;
-    color: #30475e;
-    height: 40px;
+.defaultButton:hover {
+  background-color: #ececec;
+  border: 4px solid #f2a365;
+  border-radius: 6px;
+  color: #30475e;
+  height: 40px;
 }
