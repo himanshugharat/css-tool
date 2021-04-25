@@ -7,7 +7,7 @@ import { ChromePicker } from "react-color";
 
 function Animation() {
   const [textareaValue, setTextareaValue] = useState("");
-  const [color, setColor] = useState("#fff");
+  const [color, setColor] = useState("#FF0000");
   const [palletEnable, setpalletEnable] = useState(false);
   const notify = () =>
     toast.info("copied to clipboard", {

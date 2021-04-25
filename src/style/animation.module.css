@@ -7,7 +7,7 @@
   /* border: 1px solid #fff; */
   grid-template-areas:
     "input output"
-    "additional clipboard";
+    "input clipboard";
 }
 
 .input {
