@@ -44,7 +44,6 @@
   grid-area: additional;
   /* border: 1px solid #fff; */
 }
-
 .card {
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -53,4 +52,17 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 20px;
+}
+.card input {
+  height: 40px;
+  background-color: snow;
+  border-radius: 10px;
+  margin: 5px 10px;
+}
+.card select {
+  height: 40px;
+  background-color: snow;
+  border-radius: 10px;
+  margin: 5px 10px;
+  width: 180px;
 }

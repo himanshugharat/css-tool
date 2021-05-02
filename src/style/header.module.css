@@ -1,0 +1,12 @@
+.header {
+  padding: 0 3%;
+  display: flex;
+  height: 70px;
+  background-color: rgb(34, 34, 34);
+  align-items: center;
+  gap: 0 30px;
+}
+.headerName {
+  font-size: larger;
+  font-weight: bolder;
+}

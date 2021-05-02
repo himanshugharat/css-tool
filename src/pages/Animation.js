@@ -26,29 +26,32 @@ function Animation() {
   return (
     <div className={tile.gridContainer}>
       <div className={tile.input}>
-        <Button
-          name={palletEnable ? "hide pallet" : "show pallet"}
-          operation={() => {
-            setpalletEnable(!palletEnable);
-          }}
-        ></Button>
-        {color}
-        {palletEnable && (
-          <ChromePicker
-            color={color}
-            onChange={(updatedColor) => setColor(updatedColor.hex)}
-          />
-        )}
-        <span>you picked {color}</span>
+        <div className={tile.card}>
+          <Button
+            name={palletEnable ? "hide pallet" : "Edit color"}
+            operation={() => {
+              setpalletEnable(!palletEnable);
+            }}
+          ></Button>
+          {color}
+          {palletEnable && (
+            <ChromePicker
+              color={color}
+              onChange={(updatedColor) => setColor(updatedColor.hex)}
+            />
+          )}
+        </div>
       </div>
       <div className={tile.output}>
-        <div
-          style={{
-            backgroundColor: color,
-            height: "200px",
-            width: "200px",
-          }}
-        ></div>
+        <div className={tile.card}>
+          <div
+            style={{
+              backgroundColor: color,
+              height: "200px",
+              width: "200px",
+            }}
+          ></div>
+        </div>
       </div>
       <div className={tile.clipboard}>
         {/* <textarea
@@ -60,16 +63,16 @@ function Animation() {
           value={textareaValue}
           onChange={getTextareaValue}
         ></textarea> */}
-        <pre>background-color:{color}</pre>
-        <Button
-          name="copy"
-          operation={() => {
-            navigator.clipboard.writeText(`background-color:${color}`);
-            notify();
-          }}
-        >
-          data
-        </Button>
+        <div className={tile.card}>
+          <div>background-color:{color}</div>
+          <Button
+            name="copy"
+            operation={() => {
+              navigator.clipboard.writeText(`background-color:${color}`);
+              notify();
+            }}
+          />
+        </div>
       </div>
       <div className={tile.additional}></div>
       <ToastContainer

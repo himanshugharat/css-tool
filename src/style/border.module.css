@@ -54,3 +54,16 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 20px;
 }
+.card input {
+  height: 40px;
+  background-color: snow;
+  border-radius: 10px;
+  margin: 5px 10px;
+}
+.card select {
+  height: 40px;
+  background-color: snow;
+  border-radius: 10px;
+  margin: 5px 10px;
+  width: 180px;
+}
