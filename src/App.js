@@ -5,6 +5,7 @@ import "./App.css";
 import Nav from "./component/Nav";
 import Gradient from "./pages/Gradient";
 import Border from "./pages/Border";
+import BorderRadius from "./pages/BorderRadius";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <Quotes /> */}
       {/* <Animation /> */}
       {/* <Gradient/> */}
-      <Border />
+      {/* <Border /> */}
+      <BorderRadius />
     </div>
     // <div className="grid-container">
     //   <div className="header">
