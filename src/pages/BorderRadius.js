@@ -5,7 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 function BorderRadius() {
   const [radiusType, setRadiusType] = useState("same");
-
   const [radius, setRadius] = useState(40);
   const [leftRadius, setleftRadius] = useState(10);
   const [rightRadius, setRightRadius] = useState(40);
@@ -26,9 +25,6 @@ function BorderRadius() {
   const selectValue = (e) => {
     setRadiusType(e.target.value);
   };
-
-  //   var linear = `linear-gradient(${degree}deg, ${primary} ${opacity}%, ${secondary} ${opacity1}%)`;
-  //   var radial = `radial-gradient( ${primary} ${opacity}%, ${secondary} ${opacity1}%)`;
   return (
     <div className={tile.gridContainer}>
       <div className={tile.input}>
@@ -44,7 +40,6 @@ function BorderRadius() {
               <option value="different">different on all sides</option>
             </select>
           </div>
-
           <div>
             {radiusType === "same" && (
               <>

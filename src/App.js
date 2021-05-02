@@ -6,6 +6,7 @@ import Nav from "./component/Nav";
 import Gradient from "./pages/Gradient";
 import Border from "./pages/Border";
 import BorderRadius from "./pages/BorderRadius";
+import Opacity from "./pages/Opacity";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Animation /> */}
       {/* <Gradient/> */}
       {/* <Border /> */}
-      <BorderRadius />
+      {/* <BorderRadius /> */}
+      <Opacity />
     </div>
     // <div className="grid-container">
     //   <div className="header">
