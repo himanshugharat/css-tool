@@ -124,7 +124,7 @@ function BorderRadius() {
       </div>
       <div className={tile.output}>
         <div className={tile.card}>
-          {radiusType == "same" && (
+          {radiusType === "same" && (
             <div
               style={{
                 backgroundColor: "#fff",
@@ -134,7 +134,7 @@ function BorderRadius() {
               }}
             ></div>
           )}
-          {radiusType == "different" && (
+          {radiusType === "different" && (
             <div
               style={{
                 backgroundColor: "#fff",

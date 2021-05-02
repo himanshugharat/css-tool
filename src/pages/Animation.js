@@ -6,7 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { ChromePicker } from "react-color";
 
 function Animation() {
-  const [textareaValue, setTextareaValue] = useState("");
   const [color, setColor] = useState("#FF0000");
   const [palletEnable, setpalletEnable] = useState(false);
   const notify = () =>
@@ -19,9 +18,6 @@ function Animation() {
       draggable: true,
       progress: undefined,
     });
-  const getTextareaValue = (e) => {
-    setTextareaValue(`background-color:${color}`);
-  };
 
   return (
     <div className={tile.gridContainer}>
