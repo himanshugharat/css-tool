@@ -7,6 +7,7 @@ import Gradient from "./pages/Gradient";
 import Border from "./pages/Border";
 import BorderRadius from "./pages/BorderRadius";
 import Opacity from "./pages/Opacity";
+import Outine from "./pages/Outine";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <Gradient/> */}
       {/* <Border /> */}
       {/* <BorderRadius /> */}
-      <Opacity />
+      {/* <Opacity /> */}
+      <Outine />
     </div>
     // <div className="grid-container">
     //   <div className="header">

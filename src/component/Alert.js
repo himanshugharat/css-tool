@@ -2,7 +2,11 @@ import React from "react";
 
 function Alert(props) {
   return (
-    <div>
+    <div
+      style={{
+        padding: "20px",
+      }}
+    >
       <div
         style={{
           backgroundColor: props.color,
