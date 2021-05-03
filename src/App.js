@@ -12,6 +12,7 @@ import Blur from "./pages/filter/Blur";
 import Brightness from "./pages/filter/Brightness";
 import Contrast from "./pages/filter/Contrast";
 import Dropshadow from "./pages/filter/Dropshadow";
+import Grayscale from "./pages/filter/Grayscale";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <Blur /> */}
       {/* <Brightness /> */}
       {/* <Contrast /> */}
-      <Dropshadow />
+      {/* <Dropshadow /> */}
+      <Grayscale />
     </div>
     // <div className="grid-container">
     //   <div className="header">
