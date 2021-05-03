@@ -14,6 +14,7 @@ import Contrast from "./pages/filter/Contrast";
 import Dropshadow from "./pages/filter/Dropshadow";
 import Grayscale from "./pages/filter/Grayscale";
 import HueRotate from "./pages/filter/HueRotate";
+import Invert from "./pages/filter/Invert";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
       {/* <Contrast /> */}
       {/* <Dropshadow /> */}
       {/* <Grayscale /> */}
-      <HueRotate />
+      {/* <HueRotate /> */}
+      <Invert />
     </div>
     // <div className="grid-container">
     //   <div className="header">
