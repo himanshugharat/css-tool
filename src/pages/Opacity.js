@@ -3,7 +3,7 @@ import Button from "../component/Button";
 import tile from "../style/gradient.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Alert from "../component/Alert";
+
 function Opacity() {
   const [opacity, setOpacity] = useState(40);
 

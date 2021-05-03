@@ -8,6 +8,10 @@ import Border from "./pages/Border";
 import BorderRadius from "./pages/BorderRadius";
 import Opacity from "./pages/Opacity";
 import Outine from "./pages/Outine";
+import Blur from "./pages/filter/Blur";
+import Brightness from "./pages/filter/Brightness";
+import Contrast from "./pages/filter/Contrast";
+import Dropshadow from "./pages/filter/Dropshadow";
 
 function App() {
   return (
@@ -19,7 +23,11 @@ function App() {
       {/* <Border /> */}
       {/* <BorderRadius /> */}
       {/* <Opacity /> */}
-      <Outine />
+      {/* <Outine /> */}
+      {/* <Blur /> */}
+      {/* <Brightness /> */}
+      {/* <Contrast /> */}
+      <Dropshadow />
     </div>
     // <div className="grid-container">
     //   <div className="header">
