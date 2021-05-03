@@ -16,6 +16,7 @@ import Grayscale from "./pages/filter/Grayscale";
 import HueRotate from "./pages/filter/HueRotate";
 import Invert from "./pages/filter/Invert";
 import Saturation from "./pages/filter/Saturation";
+import Sepia from "./pages/filter/Sepia";
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
       {/* <Grayscale /> */}
       {/* <HueRotate /> */}
       {/* <Invert /> */}
-      <Saturation />
+      {/* <Saturation /> */}
+      <Sepia />
     </div>
     // <div className="grid-container">
     //   <div className="header">
