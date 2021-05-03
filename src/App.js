@@ -15,6 +15,7 @@ import Dropshadow from "./pages/filter/Dropshadow";
 import Grayscale from "./pages/filter/Grayscale";
 import HueRotate from "./pages/filter/HueRotate";
 import Invert from "./pages/filter/Invert";
+import Saturation from "./pages/filter/Saturation";
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
       {/* <Dropshadow /> */}
       {/* <Grayscale /> */}
       {/* <HueRotate /> */}
-      <Invert />
+      {/* <Invert /> */}
+      <Saturation />
     </div>
     // <div className="grid-container">
     //   <div className="header">
