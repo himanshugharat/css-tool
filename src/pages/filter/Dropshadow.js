@@ -104,11 +104,13 @@ function Dropshadow() {
       </div>
       <div className={tile.clipboard}>
         <div className={tile.card}>
-          <div>background-color:{color}</div>
+          <div>{`drop-shadow(${horizontal}px ${vertical}px ${blur}px ${color})`}</div>
           <Button
             name="copy"
             operation={() => {
-              navigator.clipboard.writeText(`background-color:${color}`);
+              navigator.clipboard.writeText(
+                `drop-shadow(${horizontal}px ${vertical}px ${blur}px ${color})`
+              );
               notify();
             }}
           />

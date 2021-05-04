@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "../App.css";
+import Breadcrumbs from "../component/Breadcrumbs";
+import tile from "../style/quote.module.css";
 
 function Quotes() {
   const [data, setdata] = useState([]);
@@ -13,19 +14,20 @@ function Quotes() {
     fun();
   }, [loading]);
   return (
-    <div className="main">
+    <div className={tile.main}>
+      <Breadcrumbs />
       <button
-        className="animeButton"
+        className={tile.animeButton}
         onClick={() => {
           setloading(!loading);
         }}
       >
         More
       </button>
-      <div className="grid-container mainCard">
-        <div className="name">{data.anime}</div>
-        <div className="content">{data.quote}</div>
-        <div className="by">-{data.character}</div>
+      <div className={tile.gridcontainermainCard}>
+        <div className={tile.name}>{data.anime}</div>
+        <div className={tile.content}>{data.quote}</div>
+        <div className={tile.by}>-{data.character}</div>
       </div>
     </div>
   );

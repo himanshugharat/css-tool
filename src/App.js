@@ -17,27 +17,36 @@ import HueRotate from "./pages/filter/HueRotate";
 import Invert from "./pages/filter/Invert";
 import Saturation from "./pages/filter/Saturation";
 import Sepia from "./pages/filter/Sepia";
+import DashboardButton from "./component/DashboardButton";
+import Dashboard from "./pages/Dashboard";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Header />
-      {/* <Quotes /> */}
-      {/* <Animation /> */}
-      {/* <Gradient/> */}
-      {/* <Border /> */}
-      {/* <BorderRadius /> */}
-      {/* <Opacity /> */}
-      {/* <Outine /> */}
-      {/* <Blur /> */}
-      {/* <Brightness /> */}
-      {/* <Contrast /> */}
-      {/* <Dropshadow /> */}
-      {/* <Grayscale /> */}
-      {/* <HueRotate /> */}
-      {/* <Invert /> */}
-      {/* <Saturation /> */}
-      <Sepia />
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Dashboard} />
+          <Route path="/quotes" component={Quotes} />
+          <Route path="/background" component={Animation} />
+          <Route path="/gradient" component={Gradient} />
+          <Route path="/border" component={Border} />
+          <Route path="/borderRadius" component={BorderRadius} />
+          <Route path="/opacity" component={Opacity} />
+          <Route path="/outline" component={Outine} />
+          <Route path="/blur" component={Blur} />
+          <Route path="/brightness" component={Brightness} />
+          <Route path="/contrast" component={Contrast} />
+          <Route path="/dropshadow" component={Dropshadow} />
+          <Route path="/grayscale" component={Grayscale} />
+          <Route path="/hueRotate" component={HueRotate} />
+          <Route path="/Invert" component={Invert} />
+          <Route path="/Saturate" component={Saturation} />
+          <Route path="/sepia" component={Sepia} />
+          {/* <Outine /> */}
+        </Switch>
+      </BrowserRouter>
     </div>
     // <div className="grid-container">
     //   <div className="header">

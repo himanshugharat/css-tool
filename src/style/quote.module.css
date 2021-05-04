@@ -13,11 +13,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 70px);
   animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
-.grid-container {
+.gridcontainermainCard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -27,6 +27,14 @@
     "content content content content"
     "content content content content"
     "by by by by";
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50vmin;
+  padding: 10%;
 }
 .name {
   grid-area: name;

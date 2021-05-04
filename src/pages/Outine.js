@@ -5,6 +5,7 @@ import tile from "../style/border.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Alert from "../component/Alert";
+import Breadcrumbs from "../component/Breadcrumbs";
 
 function Outine() {
   const [primary, setprimary] = useState("#000");
@@ -34,6 +35,7 @@ function Outine() {
 
   return (
     <>
+      {/* <Breadcrumbs /> */}
       <Alert color="blue" type="Info">
         Outline differs from borders! Unlike border, the outline is drawn
         outside the element's border, and may overlap other content. Also, the
