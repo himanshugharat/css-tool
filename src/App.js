@@ -20,10 +20,12 @@ import Sepia from "./pages/filter/Sepia";
 import DashboardButton from "./component/DashboardButton";
 import Dashboard from "./pages/Dashboard";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Nlp from "./pages/nlp/Nlp";
 
 function App() {
   return (
     <div>
+      {/* <Nlp /> */}
       <BrowserRouter>
         <Header />
         <Switch>
@@ -44,7 +46,6 @@ function App() {
           <Route path="/Invert" component={Invert} />
           <Route path="/Saturate" component={Saturation} />
           <Route path="/sepia" component={Sepia} />
-          {/* <Outine /> */}
         </Switch>
       </BrowserRouter>
     </div>

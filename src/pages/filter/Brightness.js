@@ -21,15 +21,18 @@ function Brightness() {
     <div className={tile.gridContainer}>
       <div className={tile.input}>
         <div className={tile.card}>
-          <input
-            type="range"
-            max="300"
-            min="1"
-            value={brightness}
-            onChange={(e) => {
-              setBrightness(e.target.value);
-            }}
-          />
+          <label htmlFor="amount">Amount</label>
+          <div>
+            <input
+              type="range"
+              max="300"
+              min="1"
+              value={brightness}
+              onChange={(e) => {
+                setBrightness(e.target.value);
+              }}
+            />
+          </div>
         </div>
       </div>
       <div className={tile.output}>

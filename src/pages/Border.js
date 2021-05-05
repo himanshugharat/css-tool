@@ -119,7 +119,7 @@ function Border() {
                   name="opacity"
                   id=""
                   min="1"
-                  max="360"
+                  max="100"
                   value={borderwidth}
                   onChange={updatewidth}
                 />

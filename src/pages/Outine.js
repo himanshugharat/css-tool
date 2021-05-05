@@ -51,7 +51,6 @@ function Outine() {
               <label htmlFor="">color</label>
               <div>
                 <input
-                  disabled
                   type="text"
                   name="primaryColor"
                   value={primary}

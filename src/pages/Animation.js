@@ -23,13 +23,21 @@ function Animation() {
     <div className={tile.gridContainer}>
       <div className={tile.input}>
         <div className={tile.card}>
+          <input
+            type="text"
+            value={color}
+            onChange={(e) => {
+              setColor(e.target.value);
+            }}
+          />
+
           <Button
             name={palletEnable ? "hide pallet" : "Edit color"}
             operation={() => {
               setpalletEnable(!palletEnable);
             }}
           ></Button>
-          {color}
+
           {palletEnable && (
             <ChromePicker
               color={color}

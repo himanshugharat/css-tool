@@ -27,7 +27,7 @@ function Gradient() {
     setprimary(e.target.value);
   };
   const updatesecColor = (e) => {
-    setprimary(e.target.value);
+    setsecondary(e.target.value);
   };
 
   const selectValue = (e) => {

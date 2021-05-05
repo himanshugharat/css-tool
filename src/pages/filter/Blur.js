@@ -22,15 +22,18 @@ function Blur() {
     <div className={tile.gridContainer}>
       <div className={tile.input}>
         <div className={tile.card}>
-          <input
-            type="range"
-            max="100"
-            min="1"
-            value={blur}
-            onChange={(e) => {
-              setBlur(e.target.value);
-            }}
-          />
+          <label htmlFor="amount">Amount</label>
+          <div>
+            <input
+              type="range"
+              max="100"
+              min="1"
+              value={blur}
+              onChange={(e) => {
+                setBlur(e.target.value);
+              }}
+            />
+          </div>
         </div>
       </div>
       <div className={tile.output}>
